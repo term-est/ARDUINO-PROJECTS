@@ -11,7 +11,3 @@ void loop()
 	digitalWrite(8, ++i & B1);
 	delay(500);
 }
-
-
-  
-  
