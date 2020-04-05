@@ -6,10 +6,12 @@ void setup()
 
 void loop()
 {
-	digitalWrite(8, HIGH);
-	delay(500);
-	digitalWrite(8, LOW);
+	static byte i = 0;
+
+	digitalWrite(8, ++i & B1);
 	delay(500);
 }
+
+
   
   
