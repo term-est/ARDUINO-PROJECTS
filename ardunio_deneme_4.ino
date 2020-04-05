@@ -1,17 +1,16 @@
-#define potpin A0
+#define POTANTIOMETER A0
 
-int deger=0;
-float gerilim;
+
 void setup() 
 {
- Serial.begin(9600);
- Serial.println("Pot deger okuma"); 
+	Serial.begin(9600);
+	analogReadResolution(10);
+	analogReference(DEFAULT);	
+	Serial.println("Potansiyometre deger okuma"); 
 }
 
 void loop()
 {
- deger=analogRead(potpin);
- gerilim=(5.00/1024.00)*deger;
- Serial.println(gerilim);
- delay(300);
+	Serial.println(5.00 / 1024.00 * analogRead(POTANTIOMETER));
+	delay(300);
 }

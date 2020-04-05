@@ -1,5 +1,5 @@
 #define BUTTON	8
-#define LED	10
+#define LED		10
 
 void setup()
 {
@@ -11,5 +11,3 @@ void loop()
 {
 	digitalWrite(LED, digitalRead(BUTTON));
 }
-
-

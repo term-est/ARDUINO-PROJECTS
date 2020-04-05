@@ -1,15 +1,14 @@
-#define potpin A0
+#define POTANTIOMETER A0
 
-int deger=0;
+
 void setup() 
 {
- Serial.begin(9600);
- Serial.println("Pot deger okuma"); 
+	Serial.begin(9600);
+	Serial.println("Potansiyometre deger okuma"); 
 }
 
 void loop()
 {
- deger=analogRead(potpin);
- Serial.println(deger);
- delay(300);
+	Serial.println(analogRead(POTANTIOMETER));
+	delay(300);
 }
